@@ -115,7 +115,51 @@ set the enviromental variable
 ```
 ## Install ambit
 #### 1. download ambit and hdf5
+```sh
+(forte) sydong@debianlab:~/forte_install$ git clone https://ghproxy.cn/https://github.com/jturney/ambit 
+Cloning into 'ambit'...
+warning: redirecting to https://ghproxy.cfd/https:/github.com/jturney/ambit/
+remote: Enumerating objects: 4298, done.
+remote: Counting objects: 100% (258/258), done.
+remote: Compressing objects: 100% (20/20), done.
+remote: Total 4298 (delta 240), reused 238 (delta 238), pack-reused 4040 (from 1)
+Receiving objects: 100% (4298/4298), 1.25 MiB | 536.00 KiB/s, done.
+Resolving deltas: 100% (2823/2823), done.
+```
+```sh
+(forte) sydong@debianlab:~/forte_install$ git clone https://ghproxy.cn/https://github.com/HDFGroup/hdf5
+Cloning into 'hdf5'...
+warning: redirecting to https://ghproxy.cfd/https:/github.com/HDFGroup/hdf5/
+remote: Enumerating objects: 751025, done.
+remote: Counting objects: 100% (2449/2449), done.
+remote: Compressing objects: 100% (963/963), done.
+remote: Total 751025 (delta 2263), reused 1500 (delta 1486), pack-reused 748576 (from 2)
+Receiving objects: 100% (751025/751025), 584.75 MiB | 17.17 MiB/s, done.
+Resolving deltas: 100% (676804/676804), done.
+```
 #### 2. install hdf5
+```sh
+(forte) sydong@debianlab:~/forte_install$ cd hdf5
+(forte) sydong@debianlab:~/forte_install/hdf5$ cp ../build_hdf5.sh .
+(forte) sydong@debianlab:~/forte_install/hdf5$ bash build_hdf5.sh 
+-- The C compiler identification is IntelLLVM 2025.0.4
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/sydong/intel/oneapi/2025.0/bin/icx - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+
+(forte) sydong@debianlab:~/forte_install/hdf5$ cd  build/
+(forte) sydong@debianlab:~/forte_install/hdf5/build$ make install 
+(forte) sydong@debianlab:~/forte_install/hdf5$ cd build/
+(forte) sydong@debianlab:~/forte_install/hdf5/build$ make install 
+[ 13%] Built target hdf5-static
+[ 25%] Built target hdf5-shared
+[ 25%] Built target hdf5_test-static
+[ 26%] Built target hdf5_test-shared
+(forte) sydong@debianlab:~/forte_install/hdf5/build$ ls ~/install_tutorial/
+hdf5  psi4  psi4_env.sh
+```
 #### 3. install ambit
 #### 4. set enviromental variable
 ## Install forte
