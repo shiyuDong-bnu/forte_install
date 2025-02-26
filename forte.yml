@@ -1,0 +1,24 @@
+name: forte
+dependencies:
+  - python=3.12
+  - pip
+  - clang-format
+  - numpy
+  - scipy
+  - boost
+  - yaml
+  - jupyter 
+  - eigen
+  - pytest
+  - pydantic
+  - pint
+  - pybind11
+  - pythreejs
+  - libint
+  - libxc
+  - libecpint
+  - dkh
+  - gau2grid
+  - qcelemental
+  - qcengine
+  - optking
