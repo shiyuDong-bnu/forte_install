@@ -161,7 +161,38 @@ Resolving deltas: 100% (676804/676804), done.
 hdf5  psi4  psi4_env.sh
 ```
 #### 3. install ambit
+```sh
+(forte) sydong@debianlab:~/forte_install$ cd ambit/
+(forte) sydong@debianlab:~/forte_install/ambit$ cp ../build_ambit.sh .
+(forte) sydong@debianlab:~/forte_install/ambit$ bash build_ambit.sh 
+-- The C compiler identification is IntelLLVM 2025.0.4
+-- The CXX compiler identification is IntelLLVM 2025.0.4
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/sydong/intel/oneapi/2025.0/bin/icx - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+
+(forte) sydong@debianlab:~/forte_install/ambit$ cd build/
+(forte) sydong@debianlab:~/forte_install/ambit/build$ make install 
+(forte) sydong@debianlab:~/forte_install/ambit/build$ ls ~/install_tutorial/
+ambit  hdf5  psi4  psi4_env.sh
+(forte) sydong@debianlab:~/forte_install/ambit/build$ cd ../../
+```
+
 #### 4. set enviromental variable
+now we install hdf5 and ambit in the desired directory ,we need to set enviromental variables
+```sh
+(forte) sydong@debianlab:~/forte_install$ cp ambit_hdf5_env.sh  ~/install_tutorial/
+(forte) sydong@debianlab:~/forte_install$ source ~/install_tutorial/ambit_hdf5_env.sh
+(forte) sydong@debianlab:~/forte_install$ python
+Python 3.12.9 | packaged by conda-forge | (main, Feb 14 2025, 08:00:06) [GCC 13.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import ambit
+>>> 
+
+
+```
 ## Install forte
 #### 1. download forte
 #### 2. patch active_space_integra.cc
