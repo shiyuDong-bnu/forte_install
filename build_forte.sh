@@ -10,3 +10,8 @@ $psi4_plugin -S$source_dir \
 	-DCMAKE_BUILD_TYPE=Debug \
 
 cmake --build  $source_dir  -j16
+## -Dambit_DIR= the installed ambit directory 
+## -DHDF5_ROOT is  installed hdf5 directory 
+## source_dir your forte src directory 
+## !! unlike most software ,forte is build just in source directory ,
+## which is generally not recommended .

@@ -5,3 +5,4 @@ cmake -S. -B build \
 	-DCMAKE_INSTALL_PREFIX=$HOME/install_tutorial/ambit \
 
 cmake --build build -j16
+## -DHDF5_ROOT the installed hdf5 directory 
