@@ -271,7 +271,7 @@ gmake[1]: *** [CMakeFiles/Makefile2:209: forte/CMakeFiles/_forte.dir/all] Error 
 gmake: *** [Makefile:136: all] Error 2
 
 ```
-Now the std::transform is recognised,we need to include algorithm
+~~Now the std::transform is recognised,we need to include algorithm~~
 ```sh
 (forte) sydong@debianlab:~/forte_install/forte$ vi forte/integrals/active_space_integrals.cc 
 (forte) sydong@debianlab:~/forte_install/forte$ git diff forte/integrals/active_space_integrals.cc
