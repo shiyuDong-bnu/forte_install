@@ -235,7 +235,8 @@ Turn off this advice by setting config variable advice.detachedHead to false
 HEAD is now at 259d7b80 Expose CI RDMs (#440)
 
 ```
-#### 2. patch active_space_integra.cc
+#### ~~2. patch active_space_integra.cc~~
+Do not need patch ,if you set your compiler correct.
 ```sh
 (forte) sydong@debianlab:~/work/learnspace/quantum_chemistry/software/forte_install/forte$ cp ../build_forte.sh  .
 (forte) sydong@debianlab:~/work/learnspace/quantum_chemistry/software/forte_install/forte$ bash build_forte.sh 
